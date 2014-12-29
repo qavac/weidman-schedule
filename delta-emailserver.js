@@ -97,12 +97,12 @@ function formatDateTimeStamp(date) {
   return formatted;
 }
 
-function addIcsCalendarHeader( event ){
+function addIcsCalendarHeader( ){
   props.push('BEGIN:VCALENDAR');
   props.push('VERSION:2.0');
 }
 
-function addIcsCalendarFooter( event ){
+function addIcsCalendarFooter( ){
   props.push('END:VCALENDAR');
 /*
   data = props.join('\n');
@@ -154,9 +154,11 @@ function expandData( Event ){
      var endTimeMins = Event.endTime.slice(2,4);
      VEvent.dtstart = new Date( Date.UTC( '20'+Event.year,months[Event.month],Event.day,startTimeHour,startTimeMins,0,0));
      VEvent.dtstart.setTime( VEvent.dtstart.getTime() + Event.dtstart.getTimezoneOffset()*60*1000 );
+     //console.log("VEvent.dtstart " , VEvent.dtstart);
      VEvent.dtend = new Date( Date.UTC( '20'+Event.year,months[Event.month],Event.day,endTimeHour,endTimeMins,0,0));
      VEvent.dtend = new Date( VEvent.dtend.getTime() + (countTripDays - 1) * 24 * 60 * 60 * 1000 );
      VEvent.dtend.setTime( VEvent.dtend.getTime() + Event.dtend.getTimezoneOffset()*60*1000 );
+     //console.log("VEvent.dtend " , VEvent.dtend);
 
      if ( startTimeHour != '00' ){
        VEvent.eventName = countTripDays + " " + Event.tag + " (" + VEvent.startTime + "-" + VEvent.endTime + ") Credit: " + VEvent.credits;
@@ -164,13 +166,6 @@ function expandData( Event ){
      else {
        VEvent.eventName = countTripDays + " " + Event.tag;
      }
-/*
-     delete VEvent.tag;
-     delete VEvent.day;
-     delete VEvent.startTime;
-     delete VEvent.endTime;
-     delete VEvent.credits;
-*/
 
  
 }
@@ -190,8 +185,8 @@ function checkForEventEnd( element, index, array ){
 }
 
 function addEventToSchedule( ){
-//    console.log("VEvent " , VEvent);
      expandData( VEvent );
+//     console.log("VEvent with dates " , VEvent);
      iCal.push( VEvent );
      VEvent={};
      VEvent.month = month;
@@ -344,6 +339,7 @@ function parseEmail( data ){
         
         if ( array.length == aCount && emailTo[0] === 'steve@beaconidentity.com'){ 
             console.log("array length equals count");
+            console.log("countTripDayst " + countTripDays);
             addEventToSchedule(); 
             addIcsCalendarHeader();
             iCal.forEach(function( element, index, array ){
@@ -351,16 +347,14 @@ function parseEmail( data ){
                console.log(index + ": " + element)
             });
             icsData = addIcsCalendarFooter();
-            //console.log(icsData) ;
+            console.log(icsData) ;
         
             sendEmail( icsData, function(){
+              icsData=emailBody=urlSchedule=emailedSchedule=printSchedule='';
         
-              console.log("icsData",icsData);
-              console.log("emailBody",emailBody);
-              console.log("urlSchedule" , urlSchedule);
-              console.log("emailedSchedule", emailedSchedule);
+              console.log("emailed Send");
         
-             });
+            });
         }
 
 
@@ -371,6 +365,7 @@ function parseEmail( data ){
      dArray=[];
      aCount=0;
      iCal=[];
+     props=[];
 
   /* 
      addIcsCalendarHeader();
