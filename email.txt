@@ -1,0 +1,133 @@
+  SKDS   ATL 481192  WEIDMAN STEPHEN B                 01DEC14-31DEC14  21DEC14
+  481192   5507C          SCHEDULED:  7850   PROJ:  8141                  00:53
+                                                                              .
+
+  DTE STAT    ROT/POS     RPRT RLSD   CRED STAT    ROT/POS     RPRT RLSD  CRED
+  --- ----    -------     ---- ----   ---- ----    -------     ---- ----  -----
+  01M
+  02T
+  03W
+  04T
+  05F OT       4393       1524 2115   1617
+  06S             X
+  07S             X
+  08M
+  09T
+  10W
+  11T ADYX
+  12F ADV      4554-1@    1625 2227   1906
+  13S             X
+  14S             X
+  15M
+  16T
+  17W
+
+================================================================================
+
+  SKDS   ATL 481192  WEIDMAN STEPHEN B                 01DEC14-31DEC14  21DEC14
+  481192   5507C          SCHEDULED:  7850   PROJ:  8141                  00:53
+                                                                              .
+
+  DTE STAT    ROT/POS     RPRT RLSD   CRED STAT    ROT/POS     RPRT RLSD   CRED
+  --- ----    -------     ---- ----   ---- ----    -------     ---- ----  -----
+  17W
+  18T
+  19F
+  20S
+  21S
+  22M
+  23T          4481       1535 2154   1635
+  24W             X
+  25T             X
+  26F OT       3787       1105 1620   1726
+  27S             X
+  28S             X
+  29M
+  30T SWP      4453       1525 1610   1217
+  31W             X
+  01T             X                    603
+
+
+================================================================================
+
+  SKDS   ATL 481192  WEIDMAN STEPHEN B                 01JAN15-30JAN15  21DEC14
+  481192   5465C          SCHEDULED:  4503   PROJ:  4503                  00:53
+                                                                              .
+
+  DTE STAT    ROT/POS     RPRT RLSD   CRED STAT    ROT/POS     RPRT RLSD  CRED
+  --- ----    -------     ---- ----   ---- ----    -------     ---- ----  -----
+  30T SWP      4453       1525 1610   1217
+  31W             X
+  01T             X                    603
+  02F
+  03S
+  04S ADY3
+  05M ADY3
+  06T ADY3
+  07W
+  08T
+  09F
+  10S
+  11S          6350       1251 1619   1615
+  12M             X
+  13T             X
+  14W
+  15T
+
+================================================================================
+
+  SKDS   ATL 481192  WEIDMAN STEPHEN B                 01JAN15-30JAN15  21DEC14
+  481192   5465C          SCHEDULED:  4503   PROJ:  4503                  00:53
+                                                                              .
+
+  DTE STAT    ROT/POS     RPRT RLSD   CRED STAT    ROT/POS     RPRT RLSD   CRED
+  --- ----    -------     ---- ----   ---- ----    -------     ---- ----  -----
+  15T
+  16F
+  17S VAC                              315
+  18S VAC                              315
+  19M VAC                              315
+  20T VAC                              315
+  21W VAC                              315
+  22T VAC                              315
+  23F VAC                              315
+  24S
+  25S
+  26M
+  27T
+  28W ADY3
+  29T ADY3
+  30F ADY3
+
+                                 END OF DISPLAY
+
+SKDS ATL 481192 WEIDMAN STEPHEN B 01DEC14-31DEC14 21DEC14 481192 5507C SCHEDULED: 7850 PROJ: 8141 00:53 . DTE STAT ROT/POS RPRT RLSD CRED STAT ROT/POS RPRT RLSD CRED --- ---- ------- ---- ---- ---- ---- ------- ---- ---- ----- 01M 02T 03W 04T 05F OT 4393 1524 2115 1617 06S X 07S X 08M 09T 10W 11T ADYX 12F ADV 4554-1@ 1625 2227 1906 13S X 14S X 15M 16T 17W ================================================================================ SKDS ATL 481192 WEIDMAN STEPHEN B 01DEC14-31DEC14 21DEC14 481192 5507C SCHEDULED: 7850 PROJ: 8141 00:53 . DTE STAT ROT/POS RPRT RLSD CRED STAT ROT/POS RPRT RLSD CRED --- ---- ------- ---- ---- ---- ---- ------- ---- ---- ----- 17W 18T 19F 20S 21S 22M 23T 4481 1535 2154 1635 24W X 25T X 26F OT 3787 1105 1620 1726 27S X 28S X 29M 30T SWP 4453 1525 1610 1217 31W X 01T X 603 ================================================================================ SKDS ATL 481192 WEIDMAN STEPHEN B 01JAN15-30JAN15 21DEC14 481192 5465C SCHEDULED: 4503 PROJ: 4503 00:53 . DTE STAT ROT/POS RPRT RLSD CRED STAT ROT/POS RPRT RLSD CRED --- ---- ------- ---- ---- ---- ---- ------- ---- ---- ----- 30T SWP 4453 1525 1610 1217 31W X 01T X 603 02F 03S 04S ADY3 05M ADY3 06T ADY3 07W 08T 09F 10S 11S 6350 1251 1619 1615 12M X 13T X 14W 15T ================================================================================ SKDS ATL 481192 WEIDMAN STEPHEN B 01JAN15-30JAN15 21DEC14 481192 5465C SCHEDULED: 4503 PROJ: 4503 00:53 . DTE STAT ROT/POS RPRT RLSD CRED STAT ROT/POS RPRT RLSD CRED --- ---- ------- ---- ---- ---- ---- ------- ---- ---- ----- 15T 16F 17S VAC 315 18S VAC 315 19M VAC 315 20T VAC 315 21W VAC 315 22T VAC 315 23F VAC 315 24S 25S 26M 27T 28W ADY3 29T ADY3 30F ADY3 END OF DISPLAY
+
+Schedules
+
+
+Swaps/Pickups
+
+
+Rotation
+
+
+Bid Info
+
+
+Flight Info
+
+
+Personnel
+
+
+Email
+
+
+IFS Portal
+
+
+Print
+
+
+Help
