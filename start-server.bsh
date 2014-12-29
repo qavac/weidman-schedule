@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo delta-emailserver.js &
+sudo /usr/local/lib/deltaSchedule/delta-emailserver.js &

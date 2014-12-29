@@ -47,7 +47,7 @@ mailparser.on("end", function(mail_object){
 
 
 var server = email.server.connect({
-   user:    "bryankgraham@gmail.com", 
+   user:    "beaconidentity@gmail.com", 
    password:"Ktak2vy6", 
    host:    "smtp.gmail.com", 
    ssl:     true
@@ -63,8 +63,6 @@ function sendEmail( data, callback ){
    emailBody = "<html><head>\n" + emailContentType + "\n</head><body><pre>" + attachmentNotice +  urlSchedule + "</pre>\n<pre>" + emailedSchedule + "\n</pre></body></html>"
 
 
-    console.log("=====================================================================================");
-    //console.log('sendamail emailbody', emailBody);
 
    var message = {
       text:    'bryankgraham@gmail.com',    
@@ -104,14 +102,6 @@ function addIcsCalendarHeader( ){
 
 function addIcsCalendarFooter( ){
   props.push('END:VCALENDAR');
-/*
-  data = props.join('\n');
-  dest = '/Users/bgraham/Workspace/steve-email/delta-schedule.ics';
-  fs.writeFile(dest, data , function(err) {
-    if (err) { console.log( err ) };
-    console.log( dest );
-  });
-*/
   return props.join('\n');
 }
 
@@ -215,12 +205,6 @@ function parseEmail( data ){
           } 
 
       });
-
-/*
-     dArray.forEach(function( element, index, array ){
-        console.log( index + " Event " + JSON.stringify(element) ); 
-     });
-*/
 
 
      dArray.forEach(function (daArray, index, array){
@@ -339,7 +323,6 @@ function parseEmail( data ){
         
         if ( array.length == aCount && emailTo[0] === 'steve@beaconidentity.com'){ 
             console.log("array length equals count");
-            console.log("countTripDayst " + countTripDays);
             addEventToSchedule(); 
             addIcsCalendarHeader();
             iCal.forEach(function( element, index, array ){
@@ -347,7 +330,7 @@ function parseEmail( data ){
                console.log(index + ": " + element)
             });
             icsData = addIcsCalendarFooter();
-            console.log(icsData) ;
+     //       console.log(icsData) ;
         
             sendEmail( icsData, function(){
               icsData=emailBody=urlSchedule=emailedSchedule=printSchedule='';
@@ -367,29 +350,6 @@ function parseEmail( data ){
      iCal=[];
      props=[];
 
-  /* 
-     addIcsCalendarHeader();
-     iCal.forEach(function( element, index, array ){
-         addIcsData(element);
-         console.log(index + ": " + element)
-     });
-     icsData = addIcsCalendarFooter();
-     //console.log(icsData) ;
-
-     sendEmail( icsData, function(){
-       icsData=emailBody=urlSchedule=emailedSchedule=printSchedule='';
-       countTripDays=0;
-       dArray=[];
-       aCount=0;
-       iCal=[];
-
-       console.log("icsData",icsData);
-       console.log("emailBody",emailBody);
-       console.log("urlSchedule" , urlSchedule);
-       console.log("emailedSchedule", emailedSchedule);
-
-     });
-*/
     
 
 //     iCal.forEach(function( element, index, array ){
