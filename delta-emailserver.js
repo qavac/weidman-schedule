@@ -46,14 +46,6 @@ mailparser.on("end", function(mail_object){
 });
 
 
-var server = email.server.connect({
-   user:    "beaconidentity@gmail.com", 
-   password:"Ktak2vy6", 
-   host:    "smtp.gmail.com", 
-   ssl:     true
-//   host:    "localhost",
-//   host:    "74.125.29.26",
-});
 
 function sendEmail( data, callback ){
    emailBody='';
